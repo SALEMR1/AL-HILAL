@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل في نادي الهلال السكندري</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KZCGFV2DS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0KZCGFV2DS');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="شعار الهلال السكندري.jpg" alt="شعار نادي الهلال السكندري" class="logo">
+            <h1>نادي الهلال السكندري</h1>
+            <p>لتسجيل اللاعبين الجدد في النادي</p>
+        </header>
+        <main>
+            <form id="registration-form">
+                <h2>بيانات اللاعب</h2>
+                <div class="form-group">
+                    <label for="student-name">الاسم الكامل</label>
+                    <input type="text" id="student-name" name="student-name" placeholder="تجربي للموقع" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birth-date">تاريخ الميلاد</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">الجنس</label>
+                    <select id="gender" name="gender" required>
+                        <option value="ذكر">ذكر</option>
+                        <option value="أنثى">أنثى</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">العنوان</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="parent-phone">رقم الهاتف</label>
+                    <input type="tel" id="parent-phone" name="parent-phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="game-selection">اختر اللعبة</label>
+                    <select id="game-selection" name="game-selection" required>
+                        <option value="" disabled selected>-- اختر الرياضة --</option>
+                        <option value="كرة قدم">كرة قدم</option>
+                        <option value="سباحة">سباحة</option>
+                        <option value="جمباز">جمباز</option>
+                        <option value="كونغ فو">كونغ فو</option>
+                        <option value="كاراتيه">كاراتيه</option>
+                        <option value="تايكوندو">تايكوندو</option>
+                    </select>
+                </div>
+
+                <button type="submit">تسجيل</button>
+            </form>
+            <div id="success-message" class="hidden">
+                <p>ممتاز! تم تجهيز بياناتك. اضغط على الزر أدناه لإرسالها عبر واتساب.</p>
+                <a href="#" id="whatsapp-link" class="whatsapp-button" target="_blank">إرسال عبر واتساب</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
