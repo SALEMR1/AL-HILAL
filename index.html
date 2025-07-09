@@ -8,15 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KZCGFV2DS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0KZCGFV2DS');
-    </script>
 </head>
 <body>
     <div class="container">
@@ -30,7 +21,7 @@
                 <h2>بيانات اللاعب</h2>
                 <div class="form-group">
                     <label for="student-name">الاسم الكامل</label>
-                    <input type="text" id="student-name" name="student-name" placeholder="تجربي للموقع" required>
+                    <input type="text" id="student-name" name="student-name" required>
                 </div>
 
                 <div class="form-group">
@@ -41,6 +32,7 @@
                 <div class="form-group">
                     <label for="gender">الجنس</label>
                     <select id="gender" name="gender" required>
+                        <option value="" disabled selected>-- اختر الجنس --</option>
                         <option value="ذكر">ذكر</option>
                         <option value="أنثى">أنثى</option>
                     </select>

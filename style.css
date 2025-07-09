@@ -93,10 +93,6 @@ form h2 {
     box-shadow: 0 0 5px rgba(0, 82, 155, 0.2);
 }
 
-#student-name {
-    background-color: #f0f8ff;
-}
-
 button[type="submit"] {
     width: 100%;
     padding: 15px;
